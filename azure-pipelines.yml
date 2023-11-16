@@ -1,7 +1,11 @@
 - task: AzureCLI@2
+  displayName: Azure CLI
   inputs:
     azureSubscription: 'test2'
     scriptType: 'ps'
     scriptLocation: 'inlineScript'
     inlineScript: 'az storage account list'
     addSpnToEnvironment: true
+    useGlobalConfig: true
+    failOnStandardError: true
+    powerShellIgnoreLASTEXITCODE: true
