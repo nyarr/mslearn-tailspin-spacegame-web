@@ -7,6 +7,3 @@ steps:
     scriptLocation: 'inlineScript'
     inlineScript: 'az storage account list'
     addSpnToEnvironment: true
-    useGlobalConfig: true
-    failOnStandardError: true
-    powerShellIgnoreLASTEXITCODE: true
