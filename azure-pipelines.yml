@@ -4,3 +4,4 @@
     scriptType: 'ps'
     scriptLocation: 'inlineScript'
     inlineScript: 'az storage account list'
+    addSpnToEnvironment: true
