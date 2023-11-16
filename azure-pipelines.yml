@@ -1,3 +1,6 @@
-pool: MyAgentPool
-steps:
-- bash: echo hello world
+- task: AzureCLI@2
+  inputs:
+    azureSubscription: 'test2'
+    scriptType: 'ps'
+    scriptLocation: 'inlineScript'
+    inlineScript: 'az storage account list'
